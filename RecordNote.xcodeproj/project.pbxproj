@@ -12,6 +12,9 @@
 		93FFCF261F03D89200F8A94F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93FFCF241F03D89200F8A94F /* Main.storyboard */; };
 		93FFCF281F03D89200F8A94F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93FFCF271F03D89200F8A94F /* Assets.xcassets */; };
 		93FFCF2B1F03D89200F8A94F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93FFCF291F03D89200F8A94F /* LaunchScreen.storyboard */; };
+		93FFCF351F04D75700F8A94F /* SoundFilesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FFCF341F04D75700F8A94F /* SoundFilesTableViewController.swift */; };
+		93FFCF3A1F050D0100F8A94F /* PlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FFCF391F050D0100F8A94F /* PlayerManager.swift */; };
+		93FFCF3C1F053E7400F8A94F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FFCF3B1F053E7300F8A94F /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		93FFCF271F03D89200F8A94F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93FFCF2A1F03D89200F8A94F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93FFCF2C1F03D89200F8A94F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93FFCF341F04D75700F8A94F /* SoundFilesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SoundFilesTableViewController.swift; path = ../SoundFilesTableViewController.swift; sourceTree = "<group>"; };
+		93FFCF391F050D0100F8A94F /* PlayerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerManager.swift; sourceTree = "<group>"; };
+		93FFCF3B1F053E7300F8A94F /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +62,13 @@
 			children = (
 				93FFCF201F03D89200F8A94F /* AppDelegate.swift */,
 				93FFCF221F03D89200F8A94F /* ViewController.swift */,
+				93FFCF391F050D0100F8A94F /* PlayerManager.swift */,
+				93FFCF341F04D75700F8A94F /* SoundFilesTableViewController.swift */,
 				93FFCF241F03D89200F8A94F /* Main.storyboard */,
 				93FFCF271F03D89200F8A94F /* Assets.xcassets */,
 				93FFCF291F03D89200F8A94F /* LaunchScreen.storyboard */,
 				93FFCF2C1F03D89200F8A94F /* Info.plist */,
+				93FFCF3B1F053E7300F8A94F /* Item.swift */,
 			);
 			path = RecordNote;
 			sourceTree = "<group>";
@@ -137,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93FFCF3C1F053E7400F8A94F /* Item.swift in Sources */,
 				93FFCF231F03D89200F8A94F /* ViewController.swift in Sources */,
 				93FFCF211F03D89200F8A94F /* AppDelegate.swift in Sources */,
+				93FFCF3A1F050D0100F8A94F /* PlayerManager.swift in Sources */,
+				93FFCF351F04D75700F8A94F /* SoundFilesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +199,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_ACTIVITY_MODE = "";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -205,7 +218,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = "";
+				"MTL_ENABLE_DEBUG_INFO[sdk=iphonesimulator*]" = NO;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -236,6 +250,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_ACTIVITY_MODE = "";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
